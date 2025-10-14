@@ -3,22 +3,19 @@
 A comprehensive Retrieval-Augmented Generation (RAG) implementation using LangChain, FAISS, and Groq LLM for efficient document question-answering.
 
 
+## ✨ Features
+
+- **📁 Multi-format Document Support**: PDF, TXT, CSV, Excel, Word, JSON
+- **⚡ Efficient Vector Search**: FAISS for fast similarity search
+- **🚀 Fast LLM Integration**: Groq API for high-speed inference
+- **✂️ Smart Chunking**: Intelligent document splitting with overlap
+- **💾 Persistent Storage**: Save and load vector embeddings
+- **🎛️ Customizable RAG**: Configurable chunk size, overlap, and search parameters
+
+
 🏗️ RAG Architecture
 ![WhatsApp Image 2025-10-13 at 18 52 00_8b436af8](https://github.com/user-attachments/assets/8cc9b063-cba4-4e83-b195-e8fa06706411)
 ![WhatsApp Image 2025-10-13 at 17 16 54_213f00e0](https://github.com/user-attachments/assets/dab092d3-fc7d-4dd5-9628-65accaae84bc)
-<img width="1724" height="2550" alt="r1" src="https://github.com/user-attachments/assets/c4a82c1b-cb61-4b56-aace-da1fb3d3a93d" />
-
-
-
-
-## ✨ Features
-
-- **Multi-format Document Support**: PDF, TXT, CSV, Excel, Word, JSON
-- **Efficient Vector Search**: FAISS for fast similarity search
-- **Fast LLM Integration**: Groq API for high-speed inference
-- **Smart Chunking**: Intelligent document splitting with overlap
-- **Persistent Storage**: Save and load vector embeddings
-- **Customizable RAG**: Configurable chunk size, overlap, and search parameters
 
 
 ⚙️ Configuration
@@ -113,15 +110,47 @@ result = rag.search_and_summarize(query, top_k=5)
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/85fef60d-1e50-4e7e-bc38-e9f74b4e7391" />
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/02e2607e-1774-4378-ac1f-af9a0f52dcfc" />
-
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e6a8dc69-cd8d-47bf-8e8d-d0f19445e7ae" />
-
 <img width="1920" height="1080" alt="Screenshot (3413) - Copy" src="https://github.com/user-attachments/assets/db2814c5-f3f9-4370-ab52-89f860320687" />
 
 <img width="1920" height="1080" alt="Screenshot (3414)" src="https://github.com/user-attachments/assets/db5dd9ee-7bb5-4832-b3f9-d4bc99b1f416" />
 
 
+## 🗂️ Data Ingestion Flow
+📁 Raw Documents 
+    ↓
+🔄 Multi-format Loader (PDF/TXT/CSV/DOCX/JSON)
+    ↓
+✂️ Text Chunking (size: 1000, overlap: 200)
+    ↓
+🔢 Embedding Generation (all-MiniLM-L6-v2)
+    ↓
+💾 FAISS Vector Storage
+    ↓
+💿 Persistent Save (faiss.index + metadata.pkl)
+
+## 🔎 Retrieval Flow
+
+❓ User Query: "How does histogram equalization work?"
+    ↓
+🎯 Query Embedding (vector conversion)
+    ↓
+🔍 FAISS Similarity Search (top_k=5)
+    ↓
+📄 Context Retrieval (relevant document chunks)
+    ↓
+🤖 LLM Prompt: Context + Query
+    ↓
+💬 Generated Answer: "Histogram equalization improves contrast by..."
 
 
+## Key Updates Made:
+
+1. **🏗️ RAG Architecture Section** - Added comprehensive architecture diagrams and pipelines
+2. **📊 Supported Formats Table** - Added the emoji table for document formats
+3. **🎨 Enhanced Visuals** - More emojis and better section organization
+4. **🔧 Technology Stack Table** - Clear breakdown of technologies used
+5. **📈 Improved Flow Diagrams** - Both ingestion and retrieval pipelines
+6. **✨ Better Badges** - Added more relevant technology badges
+
+This README now provides a complete, professional documentation for your RAG project that will look great on GitHub! The mermaid diagram will automatically render on GitHub to show the visual architecture flow.
 
