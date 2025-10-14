@@ -2,6 +2,15 @@
 
 A comprehensive Retrieval-Augmented Generation (RAG) implementation using LangChain, FAISS, and Groq LLM for efficient document question-answering.
 
+
+🏗️ RAG Architecture
+![WhatsApp Image 2025-10-13 at 18 52 00_8b436af8](https://github.com/user-attachments/assets/8cc9b063-cba4-4e83-b195-e8fa06706411)
+![WhatsApp Image 2025-10-13 at 17 16 54_213f00e0](https://github.com/user-attachments/assets/dab092d3-fc7d-4dd5-9628-65accaae84bc)
+<img width="1724" height="2550" alt="r1" src="https://github.com/user-attachments/assets/c4a82c1b-cb61-4b56-aace-da1fb3d3a93d" />
+
+
+
+
 ## ✨ Features
 
 - **Multi-format Document Support**: PDF, TXT, CSV, Excel, Word, JSON
@@ -45,14 +54,16 @@ all-mpnet-base-v2 (Higher quality, slower)
 multi-qa-mpnet-base-dot-v1 (Optimized for Q&A)
 
 
-Format	Extension	Features
-📄 PDF	.pdf	Text extraction, metadata
-📝 Text	.txt	Simple text processing
-📊 CSV	.csv	Tabular data processing
-📈 Excel	.xlsx, .xls	Multiple sheets support
-📑 Word	.docx	Document formatting
-⚙️ JSON	.json	Structured data parsing
+## 📊 Supported Document Formats
 
+| Format | Extension | Features |
+|--------|-----------|----------|
+| 📄 PDF | `.pdf` | Text extraction, metadata |
+| 📝 Text | `.txt` | Simple text processing |
+| 📊 CSV | `.csv` | Tabular data processing |
+| 📈 Excel | `.xlsx`, `.xls` | Multiple sheets support |
+| 📑 Word | `.docx` | Document formatting |
+| ⚙️ JSON | `.json` | Structured data parsing |
 
 🔧 API Reference
 RAGSearch Class
@@ -80,7 +91,7 @@ class RAGSearch:
             
         Returns:
             Generated summary based on retrieved context
-        """
+        
 📝 Examples
 Example 1: Basic Query
 python
@@ -95,8 +106,22 @@ with examples from the provided context.
 """
 result = rag.search_and_summarize(query, top_k=5)
 
-
+ """
 
 ## DEMO 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7b8be4c7-fd2c-4648-b35d-f68bbca98f08" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/85fef60d-1e50-4e7e-bc38-e9f74b4e7391" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/02e2607e-1774-4378-ac1f-af9a0f52dcfc" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e6a8dc69-cd8d-47bf-8e8d-d0f19445e7ae" />
+
+<img width="1920" height="1080" alt="Screenshot (3413) - Copy" src="https://github.com/user-attachments/assets/db2814c5-f3f9-4370-ab52-89f860320687" />
+
+<img width="1920" height="1080" alt="Screenshot (3414)" src="https://github.com/user-attachments/assets/db5dd9ee-7bb5-4832-b3f9-d4bc99b1f416" />
+
+
+
 
 
