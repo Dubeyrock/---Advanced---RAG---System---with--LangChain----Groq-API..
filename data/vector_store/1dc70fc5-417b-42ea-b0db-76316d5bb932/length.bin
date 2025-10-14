@@ -1,0 +1,7 @@
+greater	than	or	equal	to	any	other	employee	salary	of	the	company.
+A)				select	e.ename,e.sal,e.comm	from	emp	e		where
+nvl2(e.comm.,e.sal+e.comm.,e.sal)	>=	any	(select	sal	from	emp);			(OR)
+B)				select	ename,sal,comm.	from	emp	where	sal+nvl(comm.,0)	>=	any	(select
+sal	from	emp);/
+14.								List	the	emp	whose	sal<his	manager	but	more	than	any	other	manager.
+a)select		distinct	W.empno,W.ename,W.sa
