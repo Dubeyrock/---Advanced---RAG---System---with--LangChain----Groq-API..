@@ -3,6 +3,11 @@
 A comprehensive Retrieval-Augmented Generation (RAG) implementation using LangChain, FAISS, and Groq LLM for efficient document question-answering.
 
 
+
+## What is Retrieval-Augmented Generation?
+
+Retrieval-Augmented Generation (RAG) is the process of optimizing the output of a large language model, so it references an authoritative knowledge base outside of its training data sources before generating a response. Large Language Models (LLMs) are trained on vast volumes of data and use billions of parameters to generate original output for tasks like answering questions, translating languages, and completing sentences. RAG extends the already powerful capabilities of LLMs to specific domains or an organization's internal knowledge base, all without the need to retrain the model. It is a cost-effective approach to improving LLM output so it remains relevant, accurate, and useful in various contexts.
+
 ## ✨ Features
 
 - **📁 Multi-format Document Support**: PDF, TXT, CSV, Excel, Word, JSON
@@ -14,8 +19,8 @@ A comprehensive Retrieval-Augmented Generation (RAG) implementation using LangCh
 
 
 🏗️ RAG Architecture
-![WhatsApp Image 2025-10-13 at 18 52 00_8b436af8](https://github.com/user-attachments/assets/8cc9b063-cba4-4e83-b195-e8fa06706411)
-![WhatsApp Image 2025-10-13 at 17 16 54_213f00e0](https://github.com/user-attachments/assets/dab092d3-fc7d-4dd5-9628-65accaae84bc)
+<img width="898" height="532" alt="image" src="https://github.com/user-attachments/assets/ccb4ff1c-1d1c-4326-b0f6-6e3b32f18ed0" />
+
 
 
 ⚙️ Configuration
@@ -110,9 +115,7 @@ result = rag.search_and_summarize(query, top_k=5)
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/85fef60d-1e50-4e7e-bc38-e9f74b4e7391" />
 
-<img width="1920" height="1080" alt="Screenshot (3413) - Copy" src="https://github.com/user-attachments/assets/db2814c5-f3f9-4370-ab52-89f860320687" />
 
-<img width="1920" height="1080" alt="Screenshot (3414)" src="https://github.com/user-attachments/assets/db5dd9ee-7bb5-4832-b3f9-d4bc99b1f416" />
 
 
 ## 🗂️ Data Ingestion Flow
@@ -153,4 +156,5 @@ result = rag.search_and_summarize(query, top_k=5)
 6. **✨ Better Badges** - Added more relevant technology badges
 
 This README now provides a complete, professional documentation for your RAG project that will look great on GitHub! The mermaid diagram will automatically render on GitHub to show the visual architecture flow.
+
 
