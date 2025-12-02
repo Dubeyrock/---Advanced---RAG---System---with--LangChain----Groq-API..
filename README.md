@@ -1,4 +1,5 @@
-# RAG Crash Course with LangChain 🚀
+
+## Advanced RAG System with LangChain & Groq API🚀
 
 A comprehensive Retrieval-Augmented Generation (RAG) implementation using LangChain, FAISS, and Groq LLM for efficient document question-answering.
 
@@ -156,5 +157,6 @@ result = rag.search_and_summarize(query, top_k=5)
 6. **✨ Better Badges** - Added more relevant technology badges
 
 This README now provides a complete, professional documentation for your RAG project that will look great on GitHub! The mermaid diagram will automatically render on GitHub to show the visual architecture flow.
+
 
 
